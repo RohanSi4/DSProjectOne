@@ -1,0 +1,14 @@
+Reflection on ETL Project Experience
+This project gave me hands-on experience building an ETL (Extract, Transform, Load) pipeline to process football player data. The process involved loading a CSV file, modifying the data, and saving it in both JSON and SQLite formats. Overall, some parts were straightforward, while others presented challenges.
+
+What Was Easier Than Expected
+Loading and manipulating the CSV file using pandas turned out to be simpler than I thought. Pandas made it easy to load the dataset, inspect columns, and handle basic data manipulation tasks. Similarly, converting the data into JSON and storing it in a SQLite database was quick and efficient. The built-in functions of pandas and SQLite simplified these tasks, allowing for seamless handling of different output formats.
+
+What Was Harder Than Expected
+One of the more difficult aspects was ensuring the code could handle unexpected column names or missing columns. For example, when we didn’t have the position column I expected, the script needed to dynamically adjust and skip certain steps. Debugging file paths and ensuring the data pipeline worked across different datasets also required extra attention.
+
+Application to Other Data Projects
+This ETL utility can be highly useful for projects involving stock data. Stock data often needs cleaning—removing null values, handling missing dates, and calculating new metrics like daily price changes. A similar pipeline could fetch stock data from an API, clean and transform it, and then store the processed data in a database for further analysis or visualization. Automating this process would make it easier to prepare stock data for machine learning models or financial analysis.
+
+Conclusion
+This project taught me how to build a flexible ETL pipeline that can be adapted to different datasets. It reinforced the importance of error handling, cleaning, and transforming data for real-world applications, like stock market analysis, and made me more confident in handling similar projects in the future.
